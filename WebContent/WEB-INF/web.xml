@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+		http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd"
+		version="2.5">
+		<servlet>
+   <servlet-name>RegisterServlet</servlet-name>
+   <servlet-class>com.tech.blog.servlets.RegisterServlet.java</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>RegisterServlet</servlet-name>
+	<url-pattern>/register</url-pattern>
+</servlet-mapping>
+		
+		<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+   <servlet-class>com.tech.blog.servlets.LoginServlet.java</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+   <servlet-class>com.tech.blog.servlets.LogoutServlet.java</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>LogoutServlet</servlet-name>
+	<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>EditServlet</servlet-name>
+   <servlet-class>com.tech.blog.servlets.EditServlet.java</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>EditServlet</servlet-name>
+	<url-pattern>/edit</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+<servlet>
+		<servlet-name>AddPostServlet</servlet-name>
+   <servlet-class>com.tech.blog.servlets.AddPostServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>AddPostServlet</servlet-name>
+	<url-pattern>/AddPost</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>LikeServlet</servlet-name>
+   <servlet-class>com.tech.blog.servlets.LikeServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>LikeServlet</servlet-name>
+	<url-pattern>/LikeServlet</url-pattern>
+</servlet-mapping>
+
+		</web-app>
